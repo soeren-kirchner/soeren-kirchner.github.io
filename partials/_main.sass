@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400&display=swap')
+    
+*, *:before, *:after
+    box-sizing: border-box
+
+html
+    font-size: calc(min(max(0.9rem, 1.6vw), 1.0rem))
+    font-family: 'Open Sans', sans-serif 
+
+main, header
+    // background: red
+    width: calc(min(max(300px, 90vw), 1200px))
+
+main
+    margin: 0em auto 8em auto
+
+h1
+    font-family: Merriweather
+    font-size: 1.7em
+
+a
+    color: var(--url-color)
+    text-decoration: none
+
+section
+    // background: yellow
+    display: flex
+    flex-direction: columns
+    flex-wrap: wrap
+    justify-content: center
+
+
+.section-head
+    display: flex
+    flex-direction: row
+    flex-flow: row
+    justify-content: center
+    align-items: center
+    width: 50%
+    margin-top: 2em
+
+    h2
+        font-size: .8em
+        flex-grow: 1
+        white-space: nowrap
+        text-transform: uppercase
+        margin: 1em
+        color: var(--tertiary)
+        font-weight: 300
+
+    hr
+        // width: calc(max(100px, 20vw))
+        width: 100%
+        min-width: 2em
+        height: 0px
+        border-top: 1px solid rgba(0,0,0,0.3)
+        border-bottom: 0px solid rgba(0,0,0,0.0)
+
+.topics
+    display: flex
+    flex-direction: column
+    align-items: baseline
+    width: 100%
+
+    +large
+        flex-direction: row
+
+    > :first-child
+       
+        +large
+            width: 35%
+            min-width: 35%
+
+.topic, .content
+    padding: calc(max(1%, .5em))
+
+.topic
+
+    +large
+        text-align: right
+
+    h1
+        margin: .4em 0
+
+    p
+        color: var(--secondary)
+        margin: 0
+
+.content
+
+    +large
+        padding-right: 20%
+        padding-left: 2em
+
+.icon
+    display: inline-block
+    width: 24px
+    height: 24px
+    vertical-align: bottom
+
+.inline-image
+    width: 4em
+    height: 4em
+    border-radius: 1em
+    float: right
+    margin: .2em 0em 1em 1em

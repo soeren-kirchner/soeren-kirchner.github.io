@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400&display=swap");
+:root {
+  --primary: rgb(30, 30, 30);
+  --secondary: rgb(110, 110, 110);
+  --tertiary: rgb(150, 150, 150);
+  --url-color: rgb(20, 9, 144);
+}
+
+.badges {
+  padding-top: .5em;
+  position: relative;
+  left: -0.3em;
+}
+
+.badge:before, .python:before, .pytorch:before, .numpy:before, .matplotlib:before, .swift:before, .swiftui:before, .javascript:before, .css3:before, .html:before, .sass:before, .json:before, .sql:before, .jupyter-lab:before, .php:before {
+  font-weight: 400;
+  font-size: .8em;
+  color: white;
+  border-radius: 2em;
+  padding: .3em .6em;
+  margin-left: .2em;
+}
+
+.python:before {
+  content: "Python";
+  background: #3572A5;
+}
+
+.pytorch:before {
+  content: "PyTorch";
+  background: #3572A5;
+}
+
+.numpy:before {
+  content: "NumPy";
+  background: #3572A5;
+}
+
+.matplotlib:before {
+  content: "matplotlib";
+  background: #3572A5;
+}
+
+.swift:before {
+  content: "Swift";
+  background: #ffac45;
+}
+
+.swiftui:before {
+  content: "SwiftUI";
+  background: #ffac45;
+}
+
+.javascript:before {
+  content: "Javascript";
+  background: #f1e05a;
+}
+
+.css3:before {
+  content: "CSS3";
+  background: #563d7c;
+}
+
+.html:before {
+  content: "HTML";
+  background: #e34c26;
+}
+
+.sass:before {
+  content: "SASS";
+  background: #a53b70;
+}
+
+.json:before {
+  content: "JSON";
+  background: #292929;
+}
+
+.sql:before {
+  content: "SQL";
+  background: #E38C00;
+}
+
+.jupyter-lab:before {
+  content: "JupyterLab";
+  background: #DA5B0B;
+}
+
+.php:before {
+  content: "PHP";
+  background: #4F5D95;
+}
+
+.icon:before, .web:before, .github:before, .udacity:before, .medium:before {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: .5em;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.web:before {
+  background: url("images/icons/world-svgrepo-com-2.svg") no-repeat;
+  top: .2em;
+}
+
+.github:before {
+  background: url("images/icons/github.svg") no-repeat;
+  top: .2em;
+}
+
+.udacity:before {
+  background: url("images/icons/udacity.svg") no-repeat;
+  top: .2em;
+}
+
+.medium:before {
+  background: url("images/icons/medium.svg") no-repeat;
+  top: .25em;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(min(max(0.9rem, 1.6vw), 1.0rem));
+  font-family: 'Open Sans', sans-serif;
+}
+
+main, header {
+  width: calc(min(max(300px, 90vw), 1200px));
+}
+
+main {
+  margin: 0em auto 8em auto;
+}
+
+h1 {
+  font-family: Merriweather;
+  font-size: 1.7em;
+}
+
+a {
+  color: var(--url-color);
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: columns;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-head {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 2em;
+}
+
+.section-head h2 {
+  font-size: .8em;
+  flex-grow: 1;
+  white-space: nowrap;
+  text-transform: uppercase;
+  margin: 1em;
+  color: var(--tertiary);
+  font-weight: 300;
+}
+
+.section-head hr {
+  width: 100%;
+  min-width: 2em;
+  height: 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0px solid rgba(0, 0, 0, 0);
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .topics {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 600px) {
+  .topics > :first-child {
+    width: 35%;
+    min-width: 35%;
+  }
+}
+
+.topic, .content {
+  padding: calc(max(1%, .5em));
+}
+
+@media (min-width: 600px) {
+  .topic {
+    text-align: right;
+  }
+}
+
+.topic h1 {
+  margin: .4em 0;
+}
+
+.topic p {
+  color: var(--secondary);
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .content {
+    padding-right: 20%;
+    padding-left: 2em;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+}
+
+.inline-image {
+  width: 4em;
+  height: 4em;
+  border-radius: 1em;
+  float: right;
+  margin: .2em 0em 1em 1em;
+}
+
+header {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+header img {
+  margin-left: calc(min(10em, max(0em, 20vw - 8em)));
+  margin-right: 1em;
+  width: 6em;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px var(--tertiary);
+}
+
+header img:hover {
+  box-shadow: 2px 2px 10px var(--tertiary);
+}
+
+header div {
+  padding-bottom: .1em;
+  font-family: Merriweather;
+  font-size: 1.3em;
+  color: var(--tertiary);
+}
+
+header div .profession {
+  font-size: .85em;
+  font-family: 'Open Sans', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
