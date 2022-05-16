@@ -1,11 +1,12 @@
 header
-    
-    margin-top: 2em
+    margin: 2em auto 0em auto
     display: flex
     flex-direction: row
-    align-items: flex-end
+    align-items: flex-start
+    width: calc(min(max(300px, 90vw), 1200px))
 
-    img
+
+    .profile-image
         // margin-left: 5em
         margin-left: calc(min(10em, max(0em, 20vw - 8em)))
         margin-right: 1em
@@ -16,12 +17,19 @@ header
     img:hover
         box-shadow: 2px 2px 10px var(--tertiary)
 
-    div
+    .developer
         padding-bottom: .1em
         font-family: Merriweather
         font-size: 1.3em
         color: var(--tertiary)
+        align-self: flex-end
 
         .profession
             font-size: .85em
             font-family: 'Open Sans', sans-serif 
+
+.toggle-area
+    position: fixed
+    color: red
+    right: 3em
+    top: 2em

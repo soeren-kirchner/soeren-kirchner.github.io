@@ -7,6 +7,10 @@ html
     font-size: calc(min(max(0.9rem, 1.6vw), 1.0rem))
     font-family: 'Open Sans', sans-serif 
 
+body
+    background-color: var(--background)
+    color: var(--primary)
+
 main, header
     // background: red
     width: calc(min(max(300px, 90vw), 1200px))
@@ -23,7 +27,6 @@ a
     text-decoration: none
 
 section
-    // background: yellow
     display: flex
     flex-direction: columns
     flex-wrap: wrap
@@ -53,7 +56,7 @@ section
         width: 100%
         min-width: 2em
         height: 0px
-        border-top: 1px solid rgba(0,0,0,0.3)
+        border-top: 1px solid var(--divider-color)
         border-bottom: 0px solid rgba(0,0,0,0.0)
 
 .topics
