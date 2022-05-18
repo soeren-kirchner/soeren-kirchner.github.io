@@ -32,7 +32,6 @@ section
     flex-wrap: wrap
     justify-content: center
 
-
 .section-head
     display: flex
     flex-direction: row
@@ -40,7 +39,8 @@ section
     justify-content: center
     align-items: center
     width: 50%
-    margin-top: 2em
+    margin-top: 1.5em
+    margin-bottom: .5em
 
     h2
         font-size: .8em
@@ -69,10 +69,18 @@ section
         flex-direction: row
 
     > :first-child
-       
+        // background-color: red
+
         +large
             width: 35%
             min-width: 35%
+
+    + .topics
+        // background-color: green
+        margin-top: 1.5em
+
+        +large
+            margin-top: .5em
 
 .topic, .content
     padding: calc(max(1%, .5em))

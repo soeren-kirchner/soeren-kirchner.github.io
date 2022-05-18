@@ -28,9 +28,17 @@
 }
 
 .badges {
-  padding-top: .5em;
+  margin-bottom: .5em;
   position: relative;
   left: -0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -.3em;
+}
+
+.badges > * {
+  margin-right: .4em;
+  margin-top: .8em;
 }
 
 .badge:before, .python:before, .pytorch:before, .numpy:before, .matplotlib:before, .swift:before, .swiftui:before, .javascript:before, .css3:before, .html:before, .sass:before, .json:before, .sql:before, .jupyter-lab:before, .php:before {
@@ -188,7 +196,8 @@ section {
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin-top: 2em;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
 }
 
 .section-head h2 {
@@ -226,6 +235,16 @@ section {
   .topics > :first-child {
     width: 35%;
     min-width: 35%;
+  }
+}
+
+.topics + .topics {
+  margin-top: 1.5em;
+}
+
+@media (min-width: 600px) {
+  .topics + .topics {
+    margin-top: .5em;
   }
 }
 
@@ -304,14 +323,28 @@ header .developer .profession {
 }
 
 .toggle-area {
-  position: fixed;
+  position: absolute;
   color: red;
-  right: 3em;
-  top: 2em;
+  right: 1.5em;
+  top: 1.5em;
+}
+
+@media (min-width: 600px) {
+  .toggle-area {
+    right: 3em;
+    top: 2em;
+  }
 }
 
 #dark-mode-toggle {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 600px) {
+  #dark-mode-toggle {
+    width: 24px;
+    height: 24px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
