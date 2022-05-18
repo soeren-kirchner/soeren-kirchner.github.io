@@ -164,6 +164,10 @@ body {
   color: var(--primary);
 }
 
+main, header {
+  width: calc(min(max(300px, 90vw), 1300px));
+}
+
 header {
   padding-bottom: 1.5em;
 }
@@ -201,7 +205,7 @@ section {
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   margin-top: 1.5em;
   margin-bottom: .5em;
 }
