@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400&display=swap");
 :root {
   --background: rgb(250, 250, 250);
@@ -41,7 +42,7 @@
   margin-top: .8em;
 }
 
-.badge:before, .python:before, .pytorch:before, .numpy:before, .matplotlib:before, .swift:before, .swiftui:before, .javascript:before, .css3:before, .html:before, .sass:before, .json:before, .sql:before, .jupyter-lab:before, .php:before {
+.badge:before, .python:before, .pytorch:before, .numpy:before, .matplotlib:before, .swift:before, .swiftui:before, .javascript:before, .css3:before, .html:before, .sass:before, .json:before, .sql:before, .jupyter-lab:before, .php:before, .love:before {
   font-weight: 400;
   font-size: .8em;
   color: white;
@@ -118,6 +119,12 @@
 .php:before {
   content: "PHP";
   background: #4F5D95;
+}
+
+.love:before {
+  font-size: 1em;
+  content: "💕 🤖 💻 💡 🥳";
+  background: #8685857d;
 }
 
 .icon:before, .web:before, .github:before, .udacity:before, .medium:before {
