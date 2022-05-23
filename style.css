@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap");
 :root {
   --background: rgb(250, 250, 250);
   --primary: rgb(30, 30, 30);
@@ -44,13 +44,17 @@
   margin-top: .8em;
 }
 
-.badge:before, .python:before, .pytorch:before, .numpy:before, .matplotlib:before, .swift:before, .swiftui:before, .javascript:before, .css3:before, .html:before, .sass:before, .json:before, .sql:before, .jupyter-lab:before, .php:before, .love:before {
+.badge:before, .badge2:before, .swift:before, .swiftui:before, .javascript:before, .python:before, .pytorch:before, .numpy:before, .matplotlib:before, .css3:before, .html:before, .sass:before, .json:before, .sql:before, .jupyter-lab:before, .php:before, .love:before {
   font-weight: 400;
   font-size: .8em;
   color: white;
   border-radius: 2em;
   padding: .3em .6em;
   margin-left: .2em;
+}
+
+.badge2:before, .swift:before, .swiftui:before, .javascript:before {
+  color: #3d3d3d;
 }
 
 .python:before {
@@ -159,6 +163,15 @@
   top: .25em;
 }
 
+.social-media {
+  display: flex;
+}
+
+.social-media img {
+  width: 1.5em;
+  margin-right: 1em;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -203,7 +216,7 @@ a {
 
 em {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--emphasized);
 }
 
@@ -243,7 +256,7 @@ section {
   border-bottom: 0px solid rgba(0, 0, 0, 0);
 }
 
-.topics {
+.topic {
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -251,43 +264,43 @@ section {
 }
 
 @media (min-width: 600px) {
-  .topics {
+  .topic {
     flex-direction: row;
   }
 }
 
 @media (min-width: 600px) {
-  .topics > :first-child {
+  .topic > :first-child {
     width: 35%;
     min-width: 35%;
   }
 }
 
-.topics + .topics {
+.topic + .topic {
   margin-top: 1.5em;
 }
 
 @media (min-width: 600px) {
-  .topics + .topics {
+  .topic + .topic {
     margin-top: .5em;
   }
 }
 
-.topic, .content {
+.intro, .content {
   padding: calc(max(1%, .5em));
 }
 
 @media (min-width: 600px) {
-  .topic {
+  .intro {
     text-align: right;
   }
 }
 
-.topic h1 {
+.intro h1 {
   margin: .4em 0;
 }
 
-.topic p {
+.intro p {
   color: var(--secondary);
   margin: 0;
 }

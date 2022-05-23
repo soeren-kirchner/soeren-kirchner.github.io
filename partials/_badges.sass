@@ -19,6 +19,10 @@
     padding: .3em .6em
     margin-left: .2em
 
+.badge2:before
+    @extend .badge:before
+    color: rgb(61, 61, 61)
+
 .python:before
     @extend .badge:before
     content: "Python"
@@ -40,17 +44,17 @@
     background: #3572A5
 
 .swift:before
-    @extend .badge:before
+    @extend .badge2:before
     content: "Swift"
     background: #ffac45
 
 .swiftui:before
-    @extend .badge:before
+    @extend .badge2:before
     content: "SwiftUI"
     background: #ffac45
 
 .javascript:before
-    @extend .badge:before
+    @extend .badge2:before
     content: "Javascript"
     background: #f1e05a
 
