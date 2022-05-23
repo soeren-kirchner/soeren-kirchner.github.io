@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap')
     
 *, *:before, *:after
     box-sizing: border-box
@@ -33,7 +33,7 @@ a
 
 em
     font-style: normal
-    font-weight: 600
+    font-weight: 700
     color: var(--emphasized)
 
 section
@@ -70,7 +70,7 @@ section
         border-top: 1px solid var(--divider-color)
         border-bottom: 0px solid rgba(0,0,0,0.0)
 
-.topics
+.topic
     display: flex
     flex-direction: column
     align-items: baseline
@@ -86,17 +86,17 @@ section
             width: 35%
             min-width: 35%
 
-    + .topics
+    + .topic
         // background-color: green
         margin-top: 1.5em
 
         +large
             margin-top: .5em
 
-.topic, .content
+.intro, .content
     padding: calc(max(1%, .5em))
 
-.topic
+.intro
 
     +large
         text-align: right
